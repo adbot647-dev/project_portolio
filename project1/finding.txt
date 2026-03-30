@@ -1,0 +1,47 @@
+รอบนี้เช็กเพิ่มเรื่องรูปแล้ว และเจอปัญหาชัดเจนว่ามี URL รูปบางตัวเสียจริง
+
+  Findings
+
+  1. รูปสินค้าบางตัว 404 จริงจากต้นทาง Unsplash
+     ทำให้หน้าเว็บมีโอกาสขึ้นช่องว่างแน่นอน
+      - Ribbed Cropped Tank Top รูปหลักเสียที่ /C:/Users/Admin/
+        Desktop/portfolio_project/src/data/products.js:9
+      - Wide Leg Tailored Pants ใช้รูปหลัก URL เดียวกันกับตัวบน
+        จึงเสียเหมือนกันที่ /C:/Users/Admin/Desktop/
+        portfolio_project/src/data/products.js:100
+      - Pleated Mini Skirt รูปหลักเสียที่ /C:/Users/Admin/Desktop/
+        portfolio_project/src/data/products.js:61
+      - 100% Cotton Graphic Tee รูป hover เสียที่ /C:/Users/
+        Admin/Desktop/portfolio_project/src/data/
+        products.js:88
+  2. ตอนนี้การ์ดสินค้าไม่มี fallback image เลย ถ้า URL ไหนโหลดไม่ขึ้น
+     <img> จะพังตรงๆ เพราะ render จาก product.image /
+     product.hoverImage โดยไม่มี onError ดูที่ /C:/Users/Admin/
+     Desktop/portfolio_project/src/components/
+     ProductCard.jsx:42
+  3. QA เดิมยังคงอยู่
+      - /wishlist ยังไม่มี route แต่มีลิงก์ใน header ที่ /C:/Users/
+        Admin/Desktop/portfolio_project/src/components/
+        Header.jsx:83
+      - /new, /sale, /kids ยังผูก logic ผิด
+        ทำให้หน้าไม่ตรงหมวดจริงที่ /C:/Users/Admin/Desktop/
+        portfolio_project/src/App.jsx:39
+      - text encoding เพี้ยนยังมีหลายจุด เช่น /C:/Users/Admin/
+        Desktop/portfolio_project/src/pages/Home.jsx:49, /C:/
+        Users/Admin/Desktop/portfolio_project/src/components/
+        Header.jsx:32, /C:/Users/Admin/Desktop/
+        portfolio_project/src/components/Footer.jsx:27
+
+  What I verified
+
+  - Dev server ยังตอบปกติที่ http://127.0.0.1:4173
+  - production build ผ่าน
+  - เช็ก network แล้วอย่างน้อย 4 image URLs ข้างบนเสียจริง โดยมี 404
+
+  ถ้าจะให้เดินต่อแบบตรงประเด็นที่สุด ผมแนะนำให้ผมแก้ 2 อย่างพร้อมกันเลย:
+
+  1. เปลี่ยน image URLs ที่เสีย
+  2. ใส่ fallback onError ใน /C:/Users/Admin/Desktop/
+     portfolio_project/src/components/ProductCard.jsx และ /
+     C:/Users/Admin/Desktop/portfolio_project/src/components/
+     ProductModal.jsx

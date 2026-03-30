@@ -1,0 +1,10 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#E2F0FB"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#F7FCFF" stroke="#9ABDD8" stroke-width="4"/>
+  <text x="88" y="124" fill="#4C7A9E" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">KIDS</text>
+  <rect x="285" y="255" width="230" height="82" rx="22" fill="#86ADD1"/>
+  <path d="M275 337H525L500 610C496 648 465 676 427 676H373C335 676 304 648 300 610L275 337Z" fill="#6E95BC"/>
+  <path d="M400 337V676" stroke="#F7FCFF" stroke-width="10"/>
+  <text x="88" y="884" fill="#355C7A" font-family="Arial, sans-serif" font-size="46" font-weight="700">Easy Shorts</text>
+  <text x="88" y="930" fill="#4C7A9E" font-family="Arial, sans-serif" font-size="26">Play-all-day comfort</text>
+</svg>

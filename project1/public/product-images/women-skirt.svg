@@ -1,0 +1,12 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#F9E7EE"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#FFF8FB" stroke="#D7A9BC" stroke-width="4"/>
+  <text x="88" y="124" fill="#A35A76" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">WOMEN</text>
+  <rect x="285" y="250" width="230" height="72" rx="18" fill="#E4A7BE"/>
+  <path d="M275 322H525L470 750H330L275 322Z" fill="#D68FAA"/>
+  <path d="M340 330V750" stroke="#FFF8FB" stroke-width="10"/>
+  <path d="M400 330V750" stroke="#FFF8FB" stroke-width="10"/>
+  <path d="M460 330V750" stroke="#FFF8FB" stroke-width="10"/>
+  <text x="88" y="884" fill="#7C415A" font-family="Arial, sans-serif" font-size="46" font-weight="700">Pleated Skirt</text>
+  <text x="88" y="930" fill="#A35A76" font-family="Arial, sans-serif" font-size="26">Feminine movement</text>
+</svg>

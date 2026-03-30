@@ -1,0 +1,10 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#ECE8E1"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#FAF8F3" stroke="#B0A59A" stroke-width="4"/>
+  <text x="88" y="124" fill="#685E53" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">MEN</text>
+  <path d="M295 210L400 165L505 210L570 300L505 345L470 760H330L295 345L230 300L295 210Z" fill="#A7937A"/>
+  <circle cx="400" cy="430" r="70" fill="#FAF8F3"/>
+  <text x="363" y="445" fill="#685E53" font-family="Arial, sans-serif" font-size="28" font-weight="700">GU</text>
+  <text x="88" y="884" fill="#4D443B" font-family="Arial, sans-serif" font-size="46" font-weight="700">Graphic Tee</text>
+  <text x="88" y="930" fill="#685E53" font-family="Arial, sans-serif" font-size="26">Everyday cotton staple</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#FFF2BE"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#FFFCEE" stroke="#E0C85A" stroke-width="4"/>
+  <text x="88" y="124" fill="#B18C10" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">KIDS</text>
+  <path d="M305 235L400 195L495 235L550 315L495 355L465 720H335L305 355L250 315L305 235Z" fill="#72B6A4"/>
+  <circle cx="400" cy="440" r="76" fill="#FFFCEE"/>
+  <path d="M360 470C372 444 396 430 425 430C450 430 468 443 476 465C463 486 443 500 416 500C393 500 374 489 360 470Z" fill="#F2B341"/>
+  <circle cx="390" cy="458" r="7" fill="#B18C10"/>
+  <circle cx="437" cy="458" r="7" fill="#B18C10"/>
+  <text x="88" y="884" fill="#8A6C00" font-family="Arial, sans-serif" font-size="46" font-weight="700">Graphic Tee</text>
+  <text x="88" y="930" fill="#B18C10" font-family="Arial, sans-serif" font-size="26">Fun playful print</text>
+</svg>

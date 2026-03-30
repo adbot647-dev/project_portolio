@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+.vercel/
+note.txt
+everything-claude-code/
+project1/node_modules/
+project1/.vercel/
+project1/.git/
+project1/.git.project1.backup/

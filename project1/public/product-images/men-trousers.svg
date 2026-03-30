@@ -1,0 +1,10 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#E1E8E3"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#F5F8F6" stroke="#94A39A" stroke-width="4"/>
+  <text x="88" y="124" fill="#55655D" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">MEN</text>
+  <path d="M290 210H510L548 395L485 800H405L418 470H382L395 800H315L252 395L290 210Z" fill="#7F8F86"/>
+  <rect x="320" y="255" width="52" height="92" rx="12" stroke="#F5F8F6" stroke-width="10"/>
+  <rect x="428" y="255" width="52" height="92" rx="12" stroke="#F5F8F6" stroke-width="10"/>
+  <text x="88" y="884" fill="#3D4B44" font-family="Arial, sans-serif" font-size="46" font-weight="700">Cargo Trousers</text>
+  <text x="88" y="930" fill="#55655D" font-family="Arial, sans-serif" font-size="26">Relaxed utility fit</text>
+</svg>

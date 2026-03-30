@@ -1,0 +1,11 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#E1E7F0"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#F7F9FC" stroke="#8FA0B8" stroke-width="4"/>
+  <text x="88" y="124" fill="#4F6178" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">MEN</text>
+  <path d="M300 205L400 150L500 205L565 340L505 386L478 760H322L295 386L235 340L300 205Z" fill="#6C85A3"/>
+  <path d="M400 150V760" stroke="#F7F9FC" stroke-width="10"/>
+  <rect x="324" y="404" width="64" height="96" rx="10" stroke="#F7F9FC" stroke-width="10"/>
+  <rect x="412" y="404" width="64" height="96" rx="10" stroke="#F7F9FC" stroke-width="10"/>
+  <text x="88" y="884" fill="#36475D" font-family="Arial, sans-serif" font-size="46" font-weight="700">Outerwear</text>
+  <text x="88" y="930" fill="#4F6178" font-family="Arial, sans-serif" font-size="26">Denim and zip jackets</text>
+</svg>

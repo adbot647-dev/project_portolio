@@ -1,0 +1,12 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#E8ECE4"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#F8FAF5" stroke="#9EAA97" stroke-width="4"/>
+  <text x="88" y="124" fill="#5D6757" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">MEN</text>
+  <path d="M300 200L400 158L500 200L585 308L520 362L490 760H310L280 362L215 308L300 200Z" fill="#8D9B7E"/>
+  <path d="M400 158V760" stroke="#F8FAF5" stroke-width="10"/>
+  <circle cx="400" cy="320" r="7" fill="#F8FAF5"/>
+  <circle cx="400" cy="380" r="7" fill="#F8FAF5"/>
+  <circle cx="400" cy="440" r="7" fill="#F8FAF5"/>
+  <text x="88" y="884" fill="#424B3D" font-family="Arial, sans-serif" font-size="46" font-weight="700">Resort Shirt</text>
+  <text x="88" y="930" fill="#5D6757" font-family="Arial, sans-serif" font-size="26">Relaxed collar shape</text>
+</svg>

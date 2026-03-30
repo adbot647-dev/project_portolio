@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #fff; color: #111; }
+  #root { width: 100%; min-height: 100svh; text-align: left; border: none; }
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet-active { background: #111 !important; }
+.swiper-button-next, .swiper-button-prev { color: #111 !important; }

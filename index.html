@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-logo">DEV<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Freelance Web Developer</p>
+        <h1 class="hero-title">
+          Crafting digital<br />
+          <span class="hero-accent">experiences</span>
+        </h1>
+        <p class="hero-desc">
+          ออกแบบและพัฒนาเว็บไซต์ที่สวยงาม ใช้งานง่าย<br class="hide-mobile" />
+          และตอบโจทย์ธุรกิจของคุณ
+        </p>
+        <a href="#projects" class="btn-primary">ดูผลงาน</a>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-ring">
+          <svg viewBox="0 0 200 200" class="badge-text-svg">
+            <path id="circle-path" fill="none" d="M 100,100 m -70,0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" />
+            <text font-size="13" fill="currentColor" letter-spacing="3">
+              <textPath href="#circle-path">AVAILABLE FOR WORK • FREELANCE • 2026 •</textPath>
+            </text>
+          </svg>
+          <span class="badge-center">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Selected Works</p>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-dark" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title">สวัสดีครับ</h2>
+          <p class="about-desc">
+            ผมเป็น Freelance Web Developer ที่มีความเชี่ยวชาญในการสร้างเว็บไซต์
+            ที่ตอบโจทย์ธุรกิจ ตั้งแต่ Landing Page ไปจนถึงเว็บแอปพลิเคชัน
+          </p>
+          <p class="about-desc">
+            เน้นงานที่ดูดี ใช้งานง่าย และ performance สูง
+          </p>
+        </div>
+        <div class="skills-block">
+          <p class="skills-label">Tech Stack</p>
+          <div class="skills-tags" id="skills-tags">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-center">
+        <p class="section-eyebrow">Let's Work Together</p>
+        <h2 class="section-title contact-title">มีโปรเจกต์ในใจ?</h2>
+        <p class="contact-desc">พร้อมรับงานใหม่ ติดต่อมาได้เลยครับ</p>
+        <a href="mailto:your@email.com" class="btn-primary">ติดต่อได้เลย</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>© 2026 — Freelance Web Developer</span>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

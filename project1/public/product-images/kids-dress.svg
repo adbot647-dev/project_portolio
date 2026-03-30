@@ -1,0 +1,11 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#FCE8F1"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#FFF8FC" stroke="#DBA9C0" stroke-width="4"/>
+  <text x="88" y="124" fill="#B5688E" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">KIDS</text>
+  <path d="M352 195C352 168 374 146 401 146C428 146 450 168 450 195V250H352V195Z" fill="#F3B3CF"/>
+  <path d="M300 250H500L582 760H218L300 250Z" fill="#E5A3D4"/>
+  <path d="M400 250V760" stroke="#FFF8FC" stroke-width="10"/>
+  <path d="M270 430C310 390 356 370 400 370C444 370 490 390 530 430" stroke="#FFF0A8" stroke-width="16" stroke-linecap="round"/>
+  <text x="88" y="884" fill="#8E4668" font-family="Arial, sans-serif" font-size="46" font-weight="700">Rainbow Dress</text>
+  <text x="88" y="930" fill="#B5688E" font-family="Arial, sans-serif" font-size="26">Party-ready layers</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#E8E4DF"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#FAF8F4" stroke="#B5ADA1" stroke-width="4"/>
+  <text x="88" y="124" fill="#6B645A" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">WOMEN</text>
+  <path d="M300 210H500L535 390L470 790H390L405 460H395L410 790H330L265 390L300 210Z" fill="#A89F95"/>
+  <path d="M305 300H495" stroke="#FAF8F4" stroke-width="10" stroke-linecap="round"/>
+  <text x="88" y="884" fill="#4E4942" font-family="Arial, sans-serif" font-size="46" font-weight="700">Tailored Pants</text>
+  <text x="88" y="930" fill="#6B645A" font-family="Arial, sans-serif" font-size="26">Wide and straight fits</text>
+</svg>

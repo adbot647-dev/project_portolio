@@ -1,0 +1,11 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#FFF0D6"/>
+  <rect x="48" y="48" width="704" height="904" rx="36" fill="#FFF9EF" stroke="#DDB76A" stroke-width="4"/>
+  <text x="88" y="124" fill="#AF7C10" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">KIDS</text>
+  <path d="M300 215L400 150L500 215L560 345L505 388L480 760H320L295 388L240 345L300 215Z" fill="#73A4CF"/>
+  <path d="M400 150V760" stroke="#FFF9EF" stroke-width="12"/>
+  <path d="M315 345H485" stroke="#FFB14B" stroke-width="18" stroke-linecap="round"/>
+  <path d="M355 225H445" stroke="#FFB14B" stroke-width="14" stroke-linecap="round"/>
+  <text x="88" y="884" fill="#855C00" font-family="Arial, sans-serif" font-size="46" font-weight="700">Windbreaker</text>
+  <text x="88" y="930" fill="#AF7C10" font-family="Arial, sans-serif" font-size="26">Bright colorblock look</text>
+</svg>
