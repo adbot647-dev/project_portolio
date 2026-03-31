@@ -8,7 +8,7 @@ const projects = [
     image: "assets/preview/project1.png",  // ใส่ screenshot ที่นี่
     emoji: "🌐",                           // แสดงถ้ายังไม่มี image
     tags: ["React", "Tailwind CSS", "Vite"],
-    link: "./project1/dist/index.html",    // path หรือ URL จริง
+    link: "https://luca.koralab.work/",      // path หรือ URL จริง
   },
   // ── เพิ่ม project ใหม่ตรงนี้ ──
   // {
