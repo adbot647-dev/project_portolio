@@ -3,20 +3,22 @@
 const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "เว็บไซต์ตัวอย่างที่ 1 — อธิบายสั้นๆ ว่าทำอะไร เพื่อใคร",
-    image: "assets/preview/project1.png",  // ใส่ screenshot ที่นี่
-    emoji: "🌐",                           // แสดงถ้ายังไม่มี image
+    title: "Luca Store",
+    category: "E-Commerce",
+    description: "เว็บไซต์ขายของออนไลน์ ดีไซน์ clean ใช้งานง่าย",
+    image: "assets/preview/project1.png",
+    emoji: "🛒",
     tags: ["React", "Tailwind CSS", "Vite"],
-    link: "https://luca.koralab.work/",      // subdomain ของ Project One บน Vercel
+    link: "https://luca.koralab.work/",
   },
   // ── เพิ่ม project ใหม่ตรงนี้ ──
   // {
   //   id: 2,
   //   title: "Project Two",
+  //   category: "Landing Page",   // <-- ใส่ category ที่ต้องการ
   //   description: "คำอธิบาย",
   //   image: "assets/preview/project2.png",
-  //   emoji: "🛒",
+  //   emoji: "🚀",
   //   tags: ["Next.js", "Prisma"],
   //   link: "https://project2.com",
   // },
@@ -28,41 +30,67 @@ const skills = [
   "Tailwind CSS", "Node.js", "Figma", "Vite",
 ];
 
-// ─── RENDER PROJECTS ──────────────────────────────────
+// ─── GROUP BY CATEGORY ────────────────────────────────
+function groupByCategory(list) {
+  return list.reduce((acc, p) => {
+    const cat = p.category || "Other";
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(p);
+    return acc;
+  }, {});
+}
+
+// ─── RENDER PROJECTS (NETFLIX SHELVES) ────────────────
 function renderProjects() {
   const grid = document.getElementById("projects-grid");
   if (!grid) return;
 
-  grid.innerHTML = projects.map((p, i) => `
-    <article
-      class="project-card"
-      onclick="openProject('${p.link}')"
-      style="transition-delay: ${i * 80}ms"
-    >
-      <div class="card-image-wrap">
-        ${
-          p.image
-            ? `<img src="${p.image}" alt="${p.title}" loading="lazy"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">`
-            : ""
-        }
-        <div class="card-placeholder" style="${p.image ? "display:none" : ""}">
-          ${p.emoji || "✦"}
+  const grouped = groupByCategory(projects);
+
+  grid.innerHTML = Object.entries(grouped).map(([category, items]) => `
+    <div class="shelf">
+      <h3 class="shelf-title">${category}</h3>
+      <div class="shelf-wrapper">
+        <button class="shelf-arrow shelf-arrow--left" onclick="scrollShelf(this, -1)" aria-label="scroll left">&#8249;</button>
+        <div class="shelf-track">
+          ${items.map((p, i) => `
+            <article
+              class="project-card"
+              onclick="openProject('${p.link}')"
+              style="transition-delay: ${i * 80}ms"
+            >
+              <div class="card-image-wrap">
+                ${p.image
+                  ? `<img src="${p.image}" alt="${p.title}" loading="lazy"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">`
+                  : ""}
+                <div class="card-placeholder" style="${p.image ? "display:none" : ""}">
+                  ${p.emoji || "✦"}
+                </div>
+                <div class="card-overlay">
+                  <span class="card-overlay-btn">View Site →</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">${p.title}</h3>
+                <p class="card-desc">${p.description}</p>
+                <div class="card-tags">
+                  ${p.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
+                </div>
+              </div>
+            </article>
+          `).join("")}
         </div>
-        <div class="card-overlay">
-          <span class="card-overlay-btn">View Site →</span>
-        </div>
+        <button class="shelf-arrow shelf-arrow--right" onclick="scrollShelf(this, 1)" aria-label="scroll right">&#8250;</button>
       </div>
-      <div class="card-body">
-        <p class="card-num">${String(p.id).padStart(2, "0")}</p>
-        <h3 class="card-title">${p.title}</h3>
-        <p class="card-desc">${p.description}</p>
-        <div class="card-tags">
-          ${p.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
-        </div>
-      </div>
-    </article>
+    </div>
   `).join("");
+}
+
+// ─── SCROLL SHELF ─────────────────────────────────────
+function scrollShelf(btn, dir) {
+  const track = btn.closest(".shelf-wrapper").querySelector(".shelf-track");
+  track.scrollBy({ left: dir * 360, behavior: "smooth" });
 }
 
 // ─── RENDER SKILLS ────────────────────────────────────
@@ -115,7 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   renderSkills();
   initNav();
-  // ให้ DOM โหลด card ก่อนแล้วค่อย observe
   requestAnimationFrame(() => {
     requestAnimationFrame(initScrollReveal);
   });

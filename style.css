@@ -188,14 +188,73 @@ img { display: block; width: 100%; }
   line-height: 1.1;
 }
 
-/* ─── PROJECTS GRID ──────────────────────────────────── */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 24px;
+/* ─── NETFLIX SHELVES ────────────────────────────────── */
+#projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
 }
 
+/* Shelf row */
+.shelf {}
+
+.shelf-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  margin-bottom: 16px;
+  padding-left: 4px;
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+}
+
+.shelf-wrapper {
+  position: relative;
+}
+
+.shelf-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  /* hide scrollbar */
+  scrollbar-width: none;
+}
+.shelf-track::-webkit-scrollbar { display: none; }
+
+/* Arrow buttons */
+.shelf-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  width: 48px;
+  background: linear-gradient(to right, rgba(8,8,8,0.95), rgba(8,8,8,0.6));
+  border: none;
+  color: var(--text);
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.shelf-arrow--left  { left: 0;  background: linear-gradient(to right, rgba(8,8,8,0.95), transparent); border-radius: var(--radius) 0 0 var(--radius); }
+.shelf-arrow--right { right: 0; background: linear-gradient(to left,  rgba(8,8,8,0.95), transparent); border-radius: 0 var(--radius) var(--radius) 0; }
+
+.shelf-wrapper:hover .shelf-arrow { opacity: 1; }
+.shelf-arrow:hover { color: var(--accent); }
+
+/* Project card */
 .project-card {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -205,7 +264,7 @@ img { display: block; width: 100%; }
               border-color 0.3s,
               box-shadow 0.35s;
   opacity: 0;
-  transform: translateY(32px);
+  transform: translateY(24px);
 }
 
 .project-card.visible {
@@ -216,15 +275,16 @@ img { display: block; width: 100%; }
 }
 
 .project-card:hover {
-  transform: translateY(-8px) !important;
-  border-color: rgba(200,255,0,0.3);
-  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  transform: scale(1.04) translateY(-4px) !important;
+  border-color: rgba(200,255,0,0.35);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+  z-index: 2;
 }
 
 /* Image area */
 .card-image-wrap {
   position: relative;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
   overflow: hidden;
   background: #1a1a1a;
 }
@@ -244,7 +304,7 @@ img { display: block; width: 100%; }
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,35 +345,27 @@ img { display: block; width: 100%; }
 
 /* Card body */
 .card-body {
-  padding: 24px;
-}
-
-.card-num {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: var(--text-muted);
-  margin-bottom: 10px;
+  padding: 16px 20px 20px;
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.5px;
-  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
 }
 
 .card-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .card-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .tag {
@@ -323,7 +375,7 @@ img { display: block; width: 100%; }
   color: var(--text-muted);
   background: rgba(255,255,255,0.06);
   border: 1px solid var(--border);
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 100px;
 }
 
@@ -428,8 +480,12 @@ img { display: block; width: 100%; }
     gap: 40px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .project-card {
+    flex: 0 0 260px;
+  }
+
+  .shelf-arrow {
+    display: none;
   }
 
   .footer {
